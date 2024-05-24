@@ -7,7 +7,7 @@ $(document).ready(function(){
         $('ul').append('<li>'+ input + '</li>'); //aloca o conteúdo dentro da lista - DENTRO DE LI
         $(this).val(''); //limpa o campo após o input
     
-    $(document).on("click", "#lista li", function(){
+    $('ul').on("click", "li", function(){
         $(this).toggleClass("line-through");
     })    // Marca a tarefa como concluída ao clicar nela
 
