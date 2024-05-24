@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, rgb(230, 230, 198) 50%, #1e1c1c 20% ); /* divide o background em duas cores com uma linha 45 graus traçada*/
+}
+
+.container{
+    height: 450px;
+    width: 330px;
+    background: linear-gradient(45deg, gold 50%, black 50%); /*cria uma tabela sob o input*/
+    margin-top: 150px;
+    box-shadow: #1e1c1c;
+    border-radius: 5px;
+    overflow-y: auto;
+    
+
+}
+
+input, button{
+    padding: 8px;
+    border-radius: 10px;
+    text-align: left; 
+    margin-top: 20px;
+    margin-left: 12px;
+}
+
+input{
+    width: 80%;
+    background-color:black;
+    border: none;
+    color: rgb(255, 255, 255);
+    margin-bottom: 50px;
+
+}
+
+button{
+    margin-left: 15px;
+    padding: 10px;
+    border: none;
+    background: #28a745;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: 5px;
+    
+    
+}
+
+ul li{
+    padding: 8px 0 ;
+    text-align:center;
+    color: white;
+
+
+}
+button:hover{  /*ativa efeito quando passa o mouse em cima do elemento*/
+    background: #218838;
+}
+
+.line-through{
+    text-decoration: line-through;
+}
