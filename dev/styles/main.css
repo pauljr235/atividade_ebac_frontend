@@ -1,0 +1,55 @@
+body {
+  background-color: aquamarine;
+  font-family: Roboto, sans-serif;
+  color: #fff;
+}
+h1 {
+  font-family: Lobster, cursive;
+  font-size: 3em;
+  color: red;
+}
+main {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 2em;
+  text-align: center;
+  font-family: Roboto, sans-serif;
+}
+button {
+  padding: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-top: 16px;
+  border-radius: 32px;
+  background-color: #a0e1cc;
+  color: #940d0d;
+  font-family: Roboto, sans-serif;
+}
+input {
+  display: block;
+  margin: 16px auto 0;
+  font-size: 1em;
+  max-width: 120px;
+  background-color: transparent;
+  text-align: center;
+  color: #c98622;
+}
+.resultado {
+  padding: 10px;
+  margin-top: 100px;
+  border: 16px double black;
+  color: brown;
+  display: none;
+}
+.resultado span {
+  font-weight: bold;
+  font-size: 2em;
+  display: block;
+}
+label {
+  color: #142f26;
+  font-size: 1.5em;
+  font-family: italic;
+}
