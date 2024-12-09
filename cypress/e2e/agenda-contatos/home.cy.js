@@ -16,14 +16,31 @@ describe('Testes para a home', () => {
 
     it('Deve editar 1 contato', () => {
         cy.visit('https://agenda-contatos-react.vercel.app/')
-        cy.contains('Paulo Junior').parent().find('.edit').click(); // Clica no botão Editar
-        cy.get('input[placeholder="Nome"]').clear().type('Paulo'); // Modifica o nome
-        cy.get('input[placeholder="E-mail"]').clear().type('pauljr2354'); // Modifica o e-mail
-        cy.get('input[placeholder="Telefone"]').clear().type('98899-9999'); // Modifica o telefone
-        cy.get('.alterar').click();
+        cy.get('input[placeholder="Nome"]').type('Paulo Junior')
+        cy.get('input[placeholder="E-mail"]').type('pauljr2@hotmail.com')
+        cy.get('input[placeholder="Telefone"]').type('999-9999')
+        cy.get('.adicionar').click()
 
-
+        cy.get('.edit').first().click()
+        cy.get('input[placeholder="Nome"]').clear().type('Paulo ')
+        cy.get('input[placeholder="E-mail"]').clear().type('pauljr2@10.com')
+        cy.get('input[placeholder="Telefone"]').clear().type('5555-8888')
+        cy.get('.alterar').click()
     })
+
+    /*it('Deve remover 1 contato', () => {
+        cy.visit('https://agenda-contatos-react.vercel.app/')
+        cy.get('input[placeholder="Nome"]').type('Paulo Junior')
+        cy.get('input[placeholder="E-mail"]').type('pauljr2@hotmail.com')
+        cy.get('input[placeholder="Telefone"]').type('999-9999')
+        cy.get('.adicionar').click()
+
+        cy.get('.delete').first().click()
+
+
+    })*/
+
+
 
 })
 
